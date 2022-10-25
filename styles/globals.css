@@ -4,10 +4,54 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
-*{
-  font-family: 'Roboto', sans-serif;
-}
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+  }
 
-.headingFont{
-  font-size: "60rem";
+  /* container */
+  .main-container {
+    @apply w-8/12 m-auto;
+  }
+
+  /* Scroll */
+  .scroll-hidden::-webkit-scrollbar {
+    display: none;
+  }
+  .scroll-style::-webkit-scrollbar {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(66, 245, 141) rgb(66, 245, 141);
+  }
+  .scroll-style::-webkit-scrollbar {
+    @apply w-2;
+  }
+  .scroll-style::-webkit-scrollbar-track {
+    @apply bg-txtColor/50;
+  }
+  .scroll-style::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-gradient-to-tr from-blueGreen to-blueGreen via-seaGreen;
+  }
+
+  /* Clip-path */
+  .clip-path {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
+  }
+
+  /* Blur-Effect */
+  .blur-effect-theme {
+    @apply bg-bgColor/50 bg-clip-padding backdrop-filter backdrop-blur bg-opacity-50 opacity-100 z-[100] shadow-sm shadow-bgColor/50 transition-all duration-300;
+  }
+
+  /* text-gradient */
+  .text-gradient {
+    @apply text-transparent bg-clip-text bg-gradient-to-tr from-lightOrange to-orangeColor;
+  }
+
+  /* tranistions-theme */
+  .transitions-theme {
+    @apply transition-all duration-700 ease-in-out cursor-pointer;
+  }
 }

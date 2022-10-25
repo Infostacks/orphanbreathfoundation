@@ -4,7 +4,7 @@ const TextArea = ({ placeholder }) => {
   return (
     <>
       <textarea
-        className="textarea textarea-accent"
+        className="textarea textarea-accent w-full max-w-md"
         placeholder={placeholder}
       ></textarea>
     </>
