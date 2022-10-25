@@ -6,20 +6,20 @@ import Image from "next/image";
 import { Transition } from "@headlessui/react";
 
 const index = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [navbar, setNavbar] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
+  // const [navbar, setNavbar] = useState(false);
 
-  const changeNavBG = () => {
-    if (window.scrollY >= 100) {
-      setNavbar(true);
-    } else {
-      setNavbar(false);
-    }
-  };
+  // const changeNavBG = () => {
+  //   if (window.scrollY >= 100) {
+  //     setNavbar(true);
+  //   } else {
+  //     setNavbar(false);
+  //   }
+  // };
 
-  if (typeof window != "undefined") {
-    window.addEventListener("scroll", changeNavBG);
-  }
+  // if (typeof window != "undefined") {
+  //   window.addEventListener("scroll", changeNavBG);
+  // }
 
   return (
     <div className="navbar bg-base-100">
@@ -27,7 +27,7 @@ const index = () => {
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
-            {/* Logo  */}
+            {/* Mobile-Dropdown Menu Arrow  */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -48,77 +48,105 @@ const index = () => {
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a>Home</a>
+              <Link href="/">
+                <a>Home</a>
+              </Link>
             </li>
             <li tabIndex={0}>
-              <a>
-                Our Story
-                {/* Down Arrow icon  */}
-                <svg
-                  className="fill-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-                </svg>
-              </a>
+              <Link href="/">
+                <a>
+                  Our Story
+                  {/* Down Arrow icon  */}
+                  <svg
+                    className="fill-current"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                  </svg>
+                </a>
+              </Link>
               <ul className="p-2">
                 <li>
-                  <a>Our Projects</a>
+                  <Link href="/">
+                    <a>Our Projects</a>
+                  </Link>
                 </li>
                 <li>
-                  <a>Our Programs</a>
+                  <Link href="/">
+                    <a>Our Programs</a>
+                  </Link>
                 </li>
               </ul>
             </li>
             <li>
-              <a>Giving Tuesday</a>
+              <Link href="/">
+                <a>Giving Tuesday</a>
+              </Link>
             </li>
             <li>
-              <a>News</a>
+              <Link href="/">
+                <a>News</a>
+              </Link>
             </li>
             <li>
-              <a>Blog</a>
+              <Link href="/">
+                <a>Blog</a>
+              </Link>
             </li>
             <li tabIndex={0}>
-              <a>
-                Support Us
-                {/* Down Arrow icon  */}
-                <svg
-                  className="fill-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-                </svg>
-              </a>
+              <Link href="/">
+                <a>
+                  Support Us
+                  {/* Down Arrow icon  */}
+                  <svg
+                    className="fill-current"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                  </svg>
+                </a>
+              </Link>
               <ul className="p-2">
                 <li>
-                  <a>Volunteer</a>
+                  <Link href="/">
+                    <a>Volunteer</a>
+                  </Link>
                 </li>
                 <li>
-                  <a>Fundraising</a>
+                  <Link href="/">
+                    <a>Fundraising</a>
+                  </Link>
                 </li>
               </ul>
             </li>
             <li>
-              <a>Contact</a>
+              <Link href="/">
+                <a>Contact</a>
+              </Link>
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+
+        {/* Logo  */}
+        <Link href="/">
+          <a className="btn btn-ghost normal-case xl:text-xl">
+            Orphan Breath Foundation
+          </a>
+        </Link>
       </div>
 
       {/* Web Menu  */}
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">
-          <li>
+          {/* <li>
             <a>Home</a>
-          </li>
+          </li> */}
           <li tabIndex={0}>
             <a>
               Our Story
@@ -182,7 +210,9 @@ const index = () => {
 
       {/* Donation Button  */}
       <div className="navbar-end">
-        <a className="btn btn-accent">Donation</a>
+        <Link href="/">
+          <a className="btn btn-accent">Donation</a>
+        </Link>
       </div>
     </div>
   );
