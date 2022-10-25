@@ -1,6 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Global";
 
 export default function Home() {
   return (
@@ -11,8 +10,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-slate-900 max-h-screen h-screen flex items-center justify-center text-white">
-        <h1 className="">orphanbreathfoundation</h1>
+      <main className={`${styles.bgMainWhiteColor} py-20 flex flex-col gap-10 items-center min-h-screen justify-center`}>
+        <h1 className="headingFont">Orphan Breath Foundation</h1>
+
+        <a class="btn btn-primary">Button</a>
+
+        
       </main>
     </div>
   );

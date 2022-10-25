@@ -6,6 +6,25 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    letterSpacing: {
+      tightest: "-.075em",
+      tighter: "-.05em",
+      tight: "-.025em",
+      normal: "0",
+      wider: ".05em",
+      widest: ".25em",
+    },
+    colors: {
+      primary: "#F05D23", // orange
+      blueGreen: "#17BEBB", // blue-green
+      seaGreen: "#69DC9E", // sea-green
+      txtColor: "#1D1E2C", // black/ slate
+      bgColor: "#FDF7FA",   // off-white
+    },
+    fontFamily: {
+      sans: ["Graphik", "sans-serif"],
+      serif: ["Merriweather", "serif"],
+    },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };

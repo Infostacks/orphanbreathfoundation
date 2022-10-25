@@ -1,4 +1,7 @@
 const styles = {
+  bgMainBlackColor: "bg-slate-900 text-white",
+  bgMainWhiteColor: "bg-white text-slate-900",
+
   responsiveLogoBlock:
     "xl:w-1/3 xl:h-full lg:w-1/3 lg:h-full md:h-1/3 md:w-full sm:h-1/3 sm:w-full",
 
