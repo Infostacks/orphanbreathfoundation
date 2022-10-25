@@ -1,28 +1,31 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import Link from "next/link";
-import styles from "../../styles/Global.js";
+// import styles from "../../styles/Global.js";
 import React, { useState } from "react";
 import Image from "next/image";
-import { Transition } from "@headlessui/react";
+// import { Transition } from "@headlessui/react";
 
 const index = () => {
-  // const [isOpen, setIsOpen] = useState(false);
-  // const [navbar, setNavbar] = useState(false);
+  const [navbar, setNavbar] = useState(false);
 
-  // const changeNavBG = () => {
-  //   if (window.scrollY >= 100) {
-  //     setNavbar(true);
-  //   } else {
-  //     setNavbar(false);
-  //   }
-  // };
+  const changeNavBG = () => {
+    if (window.scrollY >= 100) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
 
-  // if (typeof window != "undefined") {
-  //   window.addEventListener("scroll", changeNavBG);
-  // }
+  if (typeof window != "undefined") {
+    window.addEventListener("scroll", changeNavBG);
+  }
 
   return (
-    <div className="navbar bg-base-100">
+    <div
+      className={`navbar ${
+        navbar ? "bg-blueGreen bg-opacity-90 drop-shadow-md" : "bg-transparent"
+      } z-[1200px]`}
+    >
       {/* Mobile Menu  */}
       <div className="navbar-start">
         <div className="dropdown">
@@ -47,13 +50,13 @@ const index = () => {
             tabIndex={0}
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <li>
+            {/* <li>
               <Link href="/">
                 <a>Home</a>
               </Link>
-            </li>
+            </li> */}
             <li tabIndex={0}>
-              <Link href="/">
+              <Link href="/our-story">
                 <a>
                   Our Story
                   {/* Down Arrow icon  */}
@@ -68,36 +71,36 @@ const index = () => {
                   </svg>
                 </a>
               </Link>
-              <ul className="p-2">
+              <ul className="p-2 bg-bgColor">
                 <li>
-                  <Link href="/">
+                  <Link href="/our-story/our-projects">
                     <a>Our Projects</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/">
+                  <Link href="/our-story/our-programs">
                     <a>Our Programs</a>
                   </Link>
                 </li>
               </ul>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/giving-tuesday">
                 <a>Giving Tuesday</a>
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/news">
                 <a>News</a>
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/blog">
                 <a>Blog</a>
               </Link>
             </li>
             <li tabIndex={0}>
-              <Link href="/">
+              <Link href="/support-us">
                 <a>
                   Support Us
                   {/* Down Arrow icon  */}
@@ -112,21 +115,21 @@ const index = () => {
                   </svg>
                 </a>
               </Link>
-              <ul className="p-2">
+              <ul className="p-2 bg-bgColor">
                 <li>
-                  <Link href="/">
+                  <Link href="/support-us/volunteer">
                     <a>Volunteer</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/">
+                  <Link href="/support-us/fund-raising">
                     <a>Fundraising</a>
                   </Link>
                 </li>
               </ul>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/contact">
                 <a>Contact</a>
               </Link>
             </li>
@@ -148,70 +151,90 @@ const index = () => {
             <a>Home</a>
           </li> */}
           <li tabIndex={0}>
-            <a>
-              Our Story
-              {/* Down Arrow icon  */}
-              <svg
-                className="fill-current"
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-              >
-                <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-              </svg>
-            </a>
-            <ul className="p-2">
+            <Link href="/our-story">
+              <a>
+                Our Story
+                {/* Down Arrow icon  */}
+                <svg
+                  className="fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                </svg>
+              </a>
+            </Link>
+            <ul className="p-2 bg-bgColor">
               <li>
-                <a>Our Projects</a>
+                <Link href="/our-story/our-projects">
+                  <a>Our Projects</a>
+                </Link>
               </li>
               <li>
-                <a>Our Programs</a>
+                <Link href="/our-story/our-programs">
+                  <a>Our Programs</a>
+                </Link>
               </li>
             </ul>
           </li>
           <li>
-            <a>Giving Tuesday</a>
+            <Link href="/giving-tuesday">
+              <a>Giving Tuesday</a>
+            </Link>
           </li>
           <li>
-            <a>News</a>
+            <Link href="/news">
+              <a>News</a>
+            </Link>
           </li>
           <li>
-            <a>Blog</a>
+            <Link href="/blog">
+              <a>Blog</a>
+            </Link>
           </li>
           <li tabIndex={0}>
-            <a>
-              Support Us
-              {/* Down Arrow icon  */}
-              <svg
-                className="fill-current"
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-              >
-                <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-              </svg>
-            </a>
-            <ul className="p-2">
+            <Link href="/support-us">
+              <a>
+                Support Us
+                {/* Down Arrow icon  */}
+                <svg
+                  className="fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                </svg>
+              </a>
+            </Link>
+            <ul className="p-2 bg-bgColor">
               <li>
-                <a>Volunteer</a>
+                <Link href="/support-us/volunteer">
+                  <a>Volunteer</a>
+                </Link>
               </li>
               <li>
-                <a>Fundraising</a>
+                <Link href="/support-us/fund-raising">
+                  <a>Fundraising</a>
+                </Link>
               </li>
             </ul>
           </li>
           <li>
-            <a>Contact</a>
+            <Link href="/contact">
+              <a>Contact</a>
+            </Link>
           </li>
         </ul>
       </div>
 
       {/* Donation Button  */}
       <div className="navbar-end">
-        <Link href="/">
-          <a className="btn btn-accent">Donation</a>
+        <Link href="/donation">
+          <a className="btn btn-outline">Donation</a>
         </Link>
       </div>
     </div>

@@ -30,7 +30,7 @@ const footer = () => {
   });
 
   return (
-    <div className="flex flex-col justify-center xl:px-40 lg:px-40 md:px-24 px-10 py-20 gap-5 w-full">
+    <div className="flex flex-col justify-center xl:px-40 lg:px-40 md:px-24 px-10 py-20 gap-5 w-full text-txtColor bg-bgColor">
       {/* adress details  */}
       <div className="flex flex-row justify-between w-full items-center">
         <Image
@@ -40,9 +40,9 @@ const footer = () => {
           width={50}
           height={50}
         />
-        <div className="flex xl:flex-row lg:flex-row md:flex-row flex-col gap-5 text-slate-800">
+        <div className="flex xl:flex-row lg:flex-row md:flex-row flex-col gap-5">
           <div className="flex flex-row gap-3 items-center">
-            <div className="hover:cursor-pointer text-4xl text-slate-700">
+            <div className="hover:cursor-pointer text-4xl">
               <GoDeviceMobile />
             </div>
             <div className="flex flex-col">
@@ -51,7 +51,7 @@ const footer = () => {
             </div>
           </div>
           <div className="flex flex-row gap-3 items-center">
-            <div className="hover:cursor-pointer text-4xl text-slate-700">
+            <div className="hover:cursor-pointer text-4xl">
               <BiMapPin />
             </div>
             <div className="flex flex-col">
@@ -289,13 +289,13 @@ const footer = () => {
 
       {/* icons  */}
       <div className="flex flex-row items-center gap-2">
-        <div className="bg-violet-300 p-3 rounded-full text-white hover:cursor-pointer hover:text-violet-150 hover:bg-violet-500">
+        <div className="bg-blueGreen p-3 rounded-full text-txtColor hover:cursor-pointer hover:text-blueGreen hover:bg-txtColor">
           <GrFacebookOption />
         </div>
-        <div className="bg-violet-300 p-3 rounded-full text-white hover:cursor-pointer hover:text-violet-150 hover:bg-violet-500">
+        <div className="bg-blueGreen p-3 rounded-full text-txtColor hover:cursor-pointer hover:text-blueGreen hover:bg-txtColor">
           <FaInstagram />
         </div>
-        <div className="bg-violet-300 p-3 rounded-full text-white hover:cursor-pointer hover:text-violet-150 hover:bg-violet-500">
+        <div className="bg-blueGreen p-3 rounded-full text-txtColor hover:cursor-pointer hover:text-blueGreen hover:bg-txtColor">
           <GrTwitter />
         </div>
       </div>

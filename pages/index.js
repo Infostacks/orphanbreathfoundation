@@ -10,7 +10,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={`${styles.bgMainWhiteColor} py-20 flex flex-col gap-10 items-center min-h-screen justify-center`}>
+      <main className={`text-txtColor bg-bgColor py-20 flex flex-col gap-10 items-center min-h-screen justify-center`}>
         <h1 className="headingFont">Orphan Breath Foundation</h1>
 
         <a class="btn btn-primary">Button</a>
