@@ -5,7 +5,7 @@ import styles from "../../styles/Global";
 const index = () => {
   return (
     <div
-      className={`${styles.bgMainWhiteColor} py-20 flex flex-col gap-10 items-center justify-center`}
+      className={`text-txtColor bg-bgColor py-20 flex flex-col gap-10 items-center justify-center`}
     >
       <div className="flex flex-col items-center justify-center gap-10 max-w-screen-md">
         <h1 className="card-title">Donate</h1>

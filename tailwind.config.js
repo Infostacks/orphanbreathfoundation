@@ -15,7 +15,8 @@ module.exports = {
       widest: ".25em",
     },
     colors: {
-      primary: "#F05D23", // orange
+      orangeColor: "#F05D23", // orange
+      lightOrange: "#FA7921", // lightorange
       blueGreen: "#17BEBB", // blue-green
       seaGreen: "#69DC9E", // sea-green
       txtColor: "#1D1E2C", // black/ slate

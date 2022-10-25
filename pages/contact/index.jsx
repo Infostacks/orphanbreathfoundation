@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Contact from "../../components/Contact";
 
 const index = () => {
   return (
-    <div>index</div>
-  )
-}
+    <div className="text-txtColor bg-bgColor">
+      <Contact />
+    </div>
+  );
+};
 
-export default index
+export default index;
