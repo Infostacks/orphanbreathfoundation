@@ -15,7 +15,7 @@ const index = () => {
         <ContactDetails />
         <ContactForm />
       </div>
-      <Map />
+      {/* <Map /> */}
     </div>
   );
 };
