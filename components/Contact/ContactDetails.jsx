@@ -1,6 +1,5 @@
 import React from "react";
-import Image from "next/image";
-import ImageIcon from "../utils/ImageIcon";
+import ImageIcon from "../UIComponents/ImageIcon";
 
 const ContactDetails = () => {
   return (
