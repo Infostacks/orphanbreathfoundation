@@ -1,6 +1,6 @@
 import React from "react";
-import InputText from "../utils/InputText";
-import TextArea from "../utils/TextArea";
+import InputText from "../UIComponents/InputText";
+import TextArea from "../UIComponents/TextArea";
 
 import { useFormik } from "formik";
 
@@ -56,68 +56,82 @@ const ContactForm = () => {
       onSubmit={formik.handleSubmit}
       className="flex flex-col gap-5 w-full xl:px-0 lg:px-0 md:px-0 px-8"
     >
-      <InputText
-        type="text"
-        name="firstName"
-        placeholder="Enter First Name"
-        onChange={formik.handleChange}
-        onBlur={formik.handleBlur}
-        value={formik.values.firstName}
-      />
-      {formik.touched.firstName && formik.errors.firstName ? (
-        <div className="font-semibold text-error">
-          {formik.errors.firstName}
-        </div>
-      ) : null}
+      <div>
+        <InputText
+          type="text"
+          name="firstName"
+          placeholder="Enter First Name"
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+          value={formik.values.firstName}
+        />
+        {formik.touched.firstName && formik.errors.firstName ? (
+          <div className="font-semibold text-error">
+            {formik.errors.firstName}
+          </div>
+        ) : null}
+      </div>
 
-      <InputText
-        type="text"
-        name="lastName"
-        placeholder="Enter Last Name"
-        onChange={formik.handleChange}
-        onBlur={formik.handleBlur}
-        value={formik.values.lastName}
-      />
-      {formik.touched.lastName && formik.errors.lastName ? (
-        <div className="font-semibold text-error">{formik.errors.lastName}</div>
-      ) : null}
+      <div>
+        <InputText
+          type="text"
+          name="lastName"
+          placeholder="Enter Last Name"
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+          value={formik.values.lastName}
+        />
+        {formik.touched.lastName && formik.errors.lastName ? (
+          <div className="font-semibold text-error">
+            {formik.errors.lastName}
+          </div>
+        ) : null}
+      </div>
 
-      <InputText
-        type="email"
-        name="email"
-        placeholder="Enter Email Address"
-        onChange={formik.handleChange}
-        onBlur={formik.handleBlur}
-        value={formik.values.email}
-      />
-      {formik.touched.email && formik.errors.email ? (
-        <div className="font-semibold text-error">{formik.errors.email}</div>
-      ) : null}
+      <div>
+        <InputText
+          type="email"
+          name="email"
+          placeholder="Enter Email Address"
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+          value={formik.values.email}
+        />
+        {formik.touched.email && formik.errors.email ? (
+          <div className="font-semibold text-error">{formik.errors.email}</div>
+        ) : null}
+      </div>
 
-      <InputText
-        type="text"
-        name="contactNumber"
-        placeholder="Cell No. e.g: +1 3004005000"
-        onChange={formik.handleChange}
-        onBlur={formik.handleBlur}
-        value={formik.values.contactNumber}
-      />
-      {formik.touched.contactNumber && formik.errors.contactNumber ? (
-        <div className="font-semibold text-error">
-          {formik.errors.contactNumber}
-        </div>
-      ) : null}
+      <div>
+        <InputText
+          type="text"
+          name="contactNumber"
+          placeholder="Cell No. e.g: +1 3004005000"
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+          value={formik.values.contactNumber}
+        />
+        {formik.touched.contactNumber && formik.errors.contactNumber ? (
+          <div className="font-semibold text-error">
+            {formik.errors.contactNumber}
+          </div>
+        ) : null}
+      </div>
 
-      <TextArea
-        placeholder="Enter your message..."
-        name="message"
-        onChange={formik.handleChange}
-        onBlur={formik.handleBlur}
-        value={formik.values.message}
-      />
-      {formik.touched.message && formik.errors.message ? (
-        <div className="font-semibold text-error">{formik.errors.message}</div>
-      ) : null}
+      <div>
+        <TextArea
+          placeholder="Enter your message..."
+          name="message"
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+          value={formik.values.message}
+        />
+        {formik.touched.message && formik.errors.message ? (
+          <div className="font-semibold text-error">
+            {formik.errors.message}
+          </div>
+        ) : null}
+      </div>
 
       <button type="submit" className="btn btn-accent">
         Submit
