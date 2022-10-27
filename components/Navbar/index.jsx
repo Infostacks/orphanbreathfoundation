@@ -22,8 +22,10 @@ const index = () => {
 
   return (
     <div
-      className={`navbar ${
-        navbar ? "bg-blueGreen bg-opacity-90 drop-shadow-md" : "bg-blueGreen bg-opacity-90 drop-shadow-md"
+      className={`navbar text-bgColor ${
+        navbar
+          ? "bg-darkGreen bg-opacity-90 drop-shadow-md"
+          : "bg-darkGreen bg-opacity-90 drop-shadow-md"
       } z-[1200px]`}
     >
       {/* Mobile Menu  */}
@@ -48,7 +50,7 @@ const index = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-yellow text-darkGreen rounded-box w-52"
           >
             {/* <li>
               <Link href="/">
@@ -71,7 +73,7 @@ const index = () => {
                   </svg>
                 </a>
               </Link>
-              <ul className="p-2 bg-bgColor">
+              <ul className="p-2 bg-darkGreen text-yellow">
                 <li>
                   <Link href="/our-story/our-projects">
                     <a>Our Projects</a>
@@ -115,7 +117,7 @@ const index = () => {
                   </svg>
                 </a>
               </Link>
-              <ul className="p-2 bg-bgColor">
+              <ul className="p-2 bg-darkGreen text-yellow">
                 <li>
                   <Link href="/support-us/volunteer">
                     <a>Volunteer</a>
@@ -166,7 +168,7 @@ const index = () => {
                 </svg>
               </a>
             </Link>
-            <ul className="p-2 bg-bgColor">
+            <ul className="p-2 text-darkGreen bg-yellow">
               <li>
                 <Link href="/our-story/our-projects">
                   <a>Our Projects</a>
@@ -210,7 +212,7 @@ const index = () => {
                 </svg>
               </a>
             </Link>
-            <ul className="p-2 bg-bgColor">
+            <ul className="p-2 text-darkGreen bg-yellow">
               <li>
                 <Link href="/support-us/volunteer">
                   <a>Volunteer</a>
@@ -234,7 +236,7 @@ const index = () => {
       {/* Donation Button  */}
       <div className="navbar-end">
         <Link href="/donation">
-          <a className="btn btn-outline">Donation</a>
+          <a className="btn btn-outline text-yellow border-yellow">Donation</a>
         </Link>
       </div>
     </div>

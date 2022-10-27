@@ -47,7 +47,7 @@
 
   /* text-gradient */
   .text-gradient {
-    @apply text-transparent bg-clip-text bg-gradient-to-tr from-lightOrange to-orangeColor;
+    @apply text-transparent bg-clip-text bg-gradient-to-tr from-yellow to-lightYellow via-yellow;
   }
 
   /* tranistions-theme */

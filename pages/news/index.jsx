@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import NewsComponents from "../../components/News";
 
 const index = () => {
   return (
-    <div className='text-txtColor bg-bgColor '>index</div>
-  )
-}
+    <div className="text-txtColor bg-bgColor">
+      <NewsComponents />
+    </div>
+  );
+};
 
-export default index
+export default index;
