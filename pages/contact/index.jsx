@@ -3,7 +3,7 @@ import Contact from "../../components/Contact";
 
 const index = () => {
   return (
-    <div className="text-txtColor bg-bgColor">
+    <div className="text-txtColor bg-bgColor pb-5">
       <Contact />
     </div>
   );
