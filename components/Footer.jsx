@@ -289,13 +289,13 @@ const footer = () => {
 
       {/* icons  */}
       <div className="flex flex-row items-center gap-2">
-        <div className="bg-blueGreen p-3 rounded-full text-txtColor hover:cursor-pointer hover:text-blueGreen hover:bg-txtColor">
+        <div className="bg-darkGreen p-3 text-2xl transitions-theme rounded-full text-yellow hover:cursor-pointer hover:text-darkGreen hover:bg-yellow">
           <GrFacebookOption />
         </div>
-        <div className="bg-blueGreen p-3 rounded-full text-txtColor hover:cursor-pointer hover:text-blueGreen hover:bg-txtColor">
+        <div className="bg-darkGreen p-3 text-2xl transitions-theme rounded-full text-yellow hover:cursor-pointer hover:text-darkGreen hover:bg-yellow">
           <FaInstagram />
         </div>
-        <div className="bg-blueGreen p-3 rounded-full text-txtColor hover:cursor-pointer hover:text-blueGreen hover:bg-txtColor">
+        <div className="bg-darkGreen p-3 text-2xl transitions-theme rounded-full text-yellow hover:cursor-pointer hover:text-darkGreen hover:bg-yellow">
           <GrTwitter />
         </div>
       </div>

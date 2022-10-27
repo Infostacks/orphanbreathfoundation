@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../../components/UIComponents/Button";
+// import Button from "../../components/UIComponents/Button";
 import PageHeader from "../UIComponents/PageHeader";
 import Content from "./Content";
 import Paypal from "./Paypal";
