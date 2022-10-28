@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Volunteer from "../../../components/Volunteer";
 
 const index = () => {
   return (
-    <div className='text-txtColor bg-bgColor '>index</div>
-  )
-}
+    <div className="text-txtColor bg-bgColor pb-5">
+      <Volunteer />
+    </div>
+  );
+};
 
-export default index
+export default index;
