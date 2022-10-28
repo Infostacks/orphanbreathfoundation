@@ -9,7 +9,7 @@ import {
   FaPinterestP,
 } from "react-icons/fa";
 
-const NewsCard = ({ img, title, date, desc, btnText }) => {
+const NewsCard = ({ img, title, date, desc, btnText, comments }) => {
   const [isShown, setIsShown] = useState(false);
   const handleMouseEnter = () => {
     setIsShown(true);
@@ -38,7 +38,7 @@ const NewsCard = ({ img, title, date, desc, btnText }) => {
             Layerdrops
           </span>
           <span className="btn btn-ghost px-0 hover:bg-transparent hover:text-darkGreen text-xs font-normal gap-2">
-            <FaComments className="text-yellow text-xl" /> 2 Comments
+            <FaComments className="text-yellow text-xl" /> {comments} Comments
           </span>
         </div>
         <h2 className="card-title hover:text-darkGreen hover:cursor-pointer">{title}</h2>
@@ -58,7 +58,7 @@ const NewsCard = ({ img, title, date, desc, btnText }) => {
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseExit}
               className={`bg-yellow px-3 py-4 rounded-full flex flex-col gap-6 transition-all duration-700 ease-in-out cursor-pointer text-darkGreen absolute ${
-                isShown ? "-my-[8.2rem] -mx-3 opacity-100" : "mx-4 opacity-0"
+                isShown ? "-my-[8rem] -mx-3 opacity-100" : "mx-4 opacity-0"
               }  `}
             >
               <FaFacebookF className="hover:cursor-pointer" />
