@@ -22,10 +22,8 @@ const index = () => {
 
   return (
     <div
-      className={`navbar text-bgColor ${
-        navbar
-          ? "bg-darkGreen bg-opacity-90 drop-shadow-md"
-          : "bg-darkGreen bg-opacity-90 drop-shadow-md"
+      className={`navbar text-bgColor drop-shadow-md ${
+        navbar ? "bg-darkGreen bg-opacity-90" : "bg-darkGreen bg-opacity-30"
       } z-[1200px]`}
     >
       {/* Mobile Menu  */}

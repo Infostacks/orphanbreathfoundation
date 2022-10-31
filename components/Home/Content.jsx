@@ -4,7 +4,7 @@ import VolunteerCard from "../UIComponents/VolunteerCard";
 
 const Content = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-3 xl:px-0 lg:px-0 md:px-0 px-8 max-w-screen-md">
+    <div className="flex flex-col justify-center items-center gap-3 xl:px-0 lg:px-0 md:px-0 px-8 max-w-screen-md py-5">
       <SubHeadingText text="Home" />
 
       <VolunteerCard
