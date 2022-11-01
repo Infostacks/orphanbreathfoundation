@@ -1,5 +1,5 @@
 import React from "react";
-import Volunteer from "../../../components/Volunteer";
+import Volunteer from "../../../components/SupportUs/Volunteer";
 
 const index = () => {
   return (
