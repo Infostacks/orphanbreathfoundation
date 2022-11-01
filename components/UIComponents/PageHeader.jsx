@@ -10,7 +10,7 @@ const PageHeader = ({ imgURL, pageName, descText, btnText }) => {
     >
       <div className="hero-overlay bg-opacity-60 h-full"></div>
       <div className="hero-content text-center text-neutral-content h-full">
-        <div className="max-w-xl flex gap-3">
+        <div className="max-w-xl">
           <HeadingText text={pageName} />
 
           {descText && <p className="my-5 text-xl italic">{descText}</p>}
