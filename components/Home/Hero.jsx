@@ -1,5 +1,5 @@
 import React from "react";
-import PageHeader from "../UIComponents/PageHeader";
+import { PageHeader } from "../UIComponents";
 
 // import Swiper core and required modules
 import {

@@ -1,5 +1,5 @@
 import React from "react";
-import ImageIcon from "../UIComponents/ImageIcon";
+import { ImageIcon } from "../UIComponents";
 
 const ContactDetails = () => {
   return (

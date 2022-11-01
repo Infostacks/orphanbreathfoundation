@@ -1,6 +1,5 @@
 import React from "react";
-import SubHeadingText from "../../components/UIComponents/SubHeadingText";
-import NewsCard from "../UIComponents/NewsCard";
+import { SubHeadingText, NewsCard } from "../../components/UIComponents";
 
 const Content = () => {
   return (

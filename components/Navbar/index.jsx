@@ -1,9 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import Link from "next/link";
-// import styles from "../../styles/Global.js";
 import React, { useState } from "react";
 import Image from "next/image";
-// import { Transition } from "@headlessui/react";
 
 const index = () => {
   const [navbar, setNavbar] = useState(false);
