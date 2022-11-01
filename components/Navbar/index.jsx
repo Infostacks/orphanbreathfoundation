@@ -55,7 +55,7 @@ const index = () => {
             </li> */}
             <li tabIndex={0}>
               <Link href="/our-story">
-                <a>
+                <a className="active:bg-darkGreen hover:bg-darkGreen hover:text-bgColor">
                   Our Story
                   {/* Down Arrow icon  */}
                   <svg
@@ -72,34 +72,44 @@ const index = () => {
               <ul className="p-2 bg-darkGreen text-yellow">
                 <li>
                   <Link href="/our-story/our-projects">
-                    <a>Our Projects</a>
+                    <a className="active:bg-darkGreen hover:bg-yellow hover:text-darkGreen">
+                      Our Projects
+                    </a>
                   </Link>
                 </li>
                 <li>
                   <Link href="/our-story/our-programs">
-                    <a>Our Programs</a>
+                    <a className="active:bg-darkGreen hover:bg-yellow hover:text-darkGreen">
+                      Our Programs
+                    </a>
                   </Link>
                 </li>
               </ul>
             </li>
             <li>
               <Link href="/giving-tuesday">
-                <a>Giving Tuesday</a>
+                <a className="active:bg-darkGreen hover:bg-darkGreen hover:text-bgColor">
+                  Giving Tuesday
+                </a>
               </Link>
             </li>
             <li>
               <Link href="/news">
-                <a>News</a>
+                <a className="active:bg-darkGreen hover:bg-darkGreen hover:text-bgColor">
+                  News
+                </a>
               </Link>
             </li>
             <li>
               <Link href="/blog">
-                <a>Blog</a>
+                <a className="active:bg-darkGreen hover:bg-darkGreen hover:text-bgColor">
+                  Blog
+                </a>
               </Link>
             </li>
             <li tabIndex={0}>
               <Link href="/support-us">
-                <a>
+                <a className="active:bg-darkGreen hover:bg-darkGreen hover:text-bgColor">
                   Support Us
                   {/* Down Arrow icon  */}
                   <svg
@@ -116,19 +126,25 @@ const index = () => {
               <ul className="p-2 bg-darkGreen text-yellow">
                 <li>
                   <Link href="/support-us/volunteer">
-                    <a>Volunteer</a>
+                    <a className="active:bg-darkGreen hover:bg-yellow hover:text-darkGreen">
+                      Volunteer
+                    </a>
                   </Link>
                 </li>
                 <li>
                   <Link href="/support-us/fund-raising">
-                    <a>Fundraising</a>
+                    <a className="active:bg-darkGreen hover:bg-yellow hover:text-darkGreen">
+                      Fundraising
+                    </a>
                   </Link>
                 </li>
               </ul>
             </li>
             <li>
               <Link href="/contact">
-                <a>Contact</a>
+                <a className="active:bg-darkGreen hover:bg-darkGreen hover:text-bgColor">
+                  Contact
+                </a>
               </Link>
             </li>
           </ul>
@@ -150,7 +166,7 @@ const index = () => {
           </li> */}
           <li tabIndex={0}>
             <Link href="/our-story">
-              <a>
+              <a className="active:bg-yellow hover:bg-darkGreen">
                 Our Story
                 {/* Down Arrow icon  */}
                 <svg
@@ -167,34 +183,40 @@ const index = () => {
             <ul className="p-2 text-darkGreen bg-yellow">
               <li>
                 <Link href="/our-story/our-projects">
-                  <a>Our Projects</a>
+                  <a className="active:bg-yellow hover:bg-darkGreen hover:text-bgColor">
+                    Our Projects
+                  </a>
                 </Link>
               </li>
               <li>
                 <Link href="/our-story/our-programs">
-                  <a>Our Programs</a>
+                  <a className="active:bg-yellow hover:bg-darkGreen hover:text-bgColor">
+                    Our Programs
+                  </a>
                 </Link>
               </li>
             </ul>
           </li>
           <li>
             <Link href="/giving-tuesday">
-              <a>Giving Tuesday</a>
+              <a className="active:bg-yellow hover:bg-darkGreen">
+                Giving Tuesday
+              </a>
             </Link>
           </li>
           <li>
             <Link href="/news">
-              <a>News</a>
+              <a className="active:bg-yellow hover:bg-darkGreen">News</a>
             </Link>
           </li>
           <li>
             <Link href="/blog">
-              <a>Blog</a>
+              <a className="active:bg-yellow hover:bg-darkGreen">Blog</a>
             </Link>
           </li>
           <li tabIndex={0}>
             <Link href="/support-us">
-              <a>
+              <a className="active:bg-yellow hover:bg-darkGreen">
                 Support Us
                 {/* Down Arrow icon  */}
                 <svg
@@ -211,19 +233,23 @@ const index = () => {
             <ul className="p-2 text-darkGreen bg-yellow">
               <li>
                 <Link href="/support-us/volunteer">
-                  <a>Volunteer</a>
+                  <a className="active:bg-yellow hover:bg-darkGreen hover:text-bgColor">
+                    Volunteer
+                  </a>
                 </Link>
               </li>
               <li>
                 <Link href="/support-us/fund-raising">
-                  <a>Fundraising</a>
+                  <a className="active:bg-yellow hover:bg-darkGreen hover:text-bgColor">
+                    Fundraising
+                  </a>
                 </Link>
               </li>
             </ul>
           </li>
           <li>
             <Link href="/contact">
-              <a>Contact</a>
+              <a className="active:bg-yellow hover:bg-darkGreen">Contact</a>
             </Link>
           </li>
         </ul>
@@ -232,7 +258,9 @@ const index = () => {
       {/* Donation Button  */}
       <div className="navbar-end">
         <Link href="/donation">
-          <a className="btn btn-outline text-yellow border-yellow">Donation</a>
+          <a className="btn btn-outline hover:bg-yellow text-yellow border-yellow">
+            Donation
+          </a>
         </Link>
       </div>
     </div>

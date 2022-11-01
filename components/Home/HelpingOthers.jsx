@@ -29,8 +29,8 @@ const HelpingOthers = () => {
 
         <Paragraph text="We help companies develop powerful corporate social responsibility, grantmaking, and employee engagement strategies. Our impact is about more than moving money to where it’s needed most." />
 
-        <div className="grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 w-full">
-          <div className="card-body flex-row gap-5">
+        <div className="grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 w-[100%]">
+          <div className="card-body flex-row gap-3">
             <span>
               <MaskImage
                 imgURL="https://img.icons8.com/external-doodle-bomsymbols-/91/000000/external-archer-doodle-business-shop-finance-set-1-doodle-bomsymbols-.png"
@@ -46,7 +46,7 @@ const HelpingOthers = () => {
             </div>
           </div>
 
-          <div className="card-body flex-row gap-5">
+          <div className="card-body flex-row gap-3">
             <span>
               <MaskImage
                 imgURL="https://img.icons8.com/external-smashingstocks-mixed-smashing-stocks/344/external-storytelling-digital-marketing-smashingstocks-mixed-smashing-stocks.png"
