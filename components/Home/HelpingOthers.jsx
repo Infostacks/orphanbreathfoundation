@@ -5,6 +5,7 @@ import {
   Paragraph,
   MaskImage,
   AnimatedButton,
+  ProgressBar,
 } from "../UIComponents";
 
 const HelpingOthers = () => {
@@ -60,6 +61,13 @@ const HelpingOthers = () => {
               <Paragraph text="Nonprofits around the world apply and join us to access more funding." />
             </div>
           </div>
+        </div>
+
+        <div className="mb-10">
+          <div className="card-title">Charity</div>
+          <ProgressBar value="70" max="100" />
+          <div className="card-title">Donation</div>
+          <ProgressBar value="86" max="100" />
         </div>
 
         <AnimatedButton btnText="Discover More" link="/#" />
