@@ -13,3 +13,4 @@ export { default as SubHeadingText } from "./SubHeadingText.jsx";
 export { default as TextArea } from "./TextArea.jsx";
 export { default as VolunteerCard } from "./VolunteerCard.jsx";
 export { default as AnimatedButton } from "./AnimatedButton.jsx";
+export { default as ProgressBar } from "./ProgressBar.jsx";
