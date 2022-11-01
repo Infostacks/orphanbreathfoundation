@@ -1,5 +1,5 @@
 import React from "react";
-import PageHeader from "../UIComponents/PageHeader";
+import { PageHeader } from "../UIComponents";
 import Content from "./Content";
 
 const index = () => {

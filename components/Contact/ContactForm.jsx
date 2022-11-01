@@ -1,6 +1,5 @@
 import React from "react";
-import InputText from "../UIComponents/InputText";
-import TextArea from "../UIComponents/TextArea";
+import { InputText, TextArea } from "../UIComponents";
 
 import { useFormik } from "formik";
 

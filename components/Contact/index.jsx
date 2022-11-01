@@ -1,5 +1,5 @@
 import React from "react";
-import PageHeader from "../UIComponents/PageHeader";
+import { PageHeader } from "../UIComponents";
 import ContactDetails from "./ContactDetails";
 import ContactForm from "./ContactForm";
 // import Map from "./Map";

@@ -1,6 +1,5 @@
 import React from "react";
-import SubHeadingText from "../../components/UIComponents/SubHeadingText";
-import Paragraph from "../../components/UIComponents/Paragraph";
+import { SubHeadingText, Paragraph } from "../../components/UIComponents";
 
 const Content = () => {
   return (
