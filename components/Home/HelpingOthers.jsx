@@ -20,7 +20,7 @@ const HelpingOthers = () => {
         className="rounded-t-[3rem] rounded-br-[3rem] drop-shadow-lg"
       />
 
-      <div className="xl:w-1/2 lg:w-1/2 w-full">
+      <div className="xl:w-1/2 lg:w-1/2 w-full flex flex-col gap-5">
         <h2 className="text-darkGreen font-bold italic">
           Get to know about oxpins
         </h2>
@@ -29,8 +29,8 @@ const HelpingOthers = () => {
 
         <Paragraph text="We help companies develop powerful corporate social responsibility, grantmaking, and employee engagement strategies. Our impact is about more than moving money to where it’s needed most." />
 
-        <div className="grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 w-[100%]">
-          <div className="card-body flex-row gap-3">
+        <div className="grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-3 w-full">
+          <div className="flex flex-row gap-3">
             <span>
               <MaskImage
                 imgURL="https://img.icons8.com/external-doodle-bomsymbols-/91/000000/external-archer-doodle-business-shop-finance-set-1-doodle-bomsymbols-.png"
@@ -46,7 +46,7 @@ const HelpingOthers = () => {
             </div>
           </div>
 
-          <div className="card-body flex-row gap-3">
+          <div className="flex flex-row gap-3">
             <span>
               <MaskImage
                 imgURL="https://img.icons8.com/external-smashingstocks-mixed-smashing-stocks/344/external-storytelling-digital-marketing-smashingstocks-mixed-smashing-stocks.png"
@@ -63,14 +63,16 @@ const HelpingOthers = () => {
           </div>
         </div>
 
-        <div className="mb-10">
+        <div className="mb-5">
           <div className="card-title">Charity</div>
           <ProgressBar value="70" max="100" />
           <div className="card-title">Donation</div>
           <ProgressBar value="86" max="100" />
         </div>
 
-        <AnimatedButton btnText="Discover More" link="/#" />
+        <div>
+          <AnimatedButton btnText="Discover More" link="/#" />
+        </div>
       </div>
     </div>
   );

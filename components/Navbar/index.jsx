@@ -2,9 +2,11 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
+import useReadingProgress from "../../hooks/useReadingProgress";
 
 const index = () => {
   const [navbar, setNavbar] = useState(false);
+  const completion = useReadingProgress();
 
   const changeNavBG = () => {
     if (window.scrollY >= 100) {
@@ -263,6 +265,11 @@ const index = () => {
           </a>
         </Link>
       </div>
+
+      {/* <span
+        style={{ transform: `translateX(${completion - 100}%)` }}
+        className="absolute bg-yellow h-1 w-full -ml-[7px] bottom-0"
+      /> */}
     </div>
   );
 };
