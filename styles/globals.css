@@ -22,22 +22,25 @@
   }
 
   /* Scroll */
-  .scroll-hidden::-webkit-scrollbar {
-    display: none;
-  }
-  .scroll-style::-webkit-scrollbar {
+  ::-webkit-scrollbar {
+    width: 10px;
     scroll-behavior: smooth;
-    scrollbar-width: thin;
     scrollbar-color: rgb(66, 245, 141) rgb(66, 245, 141);
   }
-  .scroll-style::-webkit-scrollbar {
-    @apply w-2;
-  }
-  .scroll-style::-webkit-scrollbar-track {
+
+  /* Track  */
+  ::-webkit-scrollbar-track {
     @apply bg-txtColor/50;
   }
-  .scroll-style::-webkit-scrollbar-thumb {
-    @apply rounded-full bg-gradient-to-tr from-blueGreen to-blueGreen via-seaGreen;
+
+  /* Handle  */
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-gradient-to-b from-orangeColor to-orangeColor via-yellow;
+  }
+
+  /* handle on hover  */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #17bebb;
   }
 
   /* Clip-path */
